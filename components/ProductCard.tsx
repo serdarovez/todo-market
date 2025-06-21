@@ -20,6 +20,7 @@ export const ProductCard = ({ product }: ProductProps) => {
       <img
         src={product.image_url}
         alt={product.title}
+        loading="lazy"
         className="w-full h-52 object-cover rounded-t-xl mb-3"
       />
 
@@ -56,7 +57,8 @@ export const ProductCard = ({ product }: ProductProps) => {
             onChange={(e) =>
               setQuantity(product.id, Math.max(1, +e.target.value))
             }
-            className="bg-transparent text-center w-10 text-lg outline-none"
+            className="bg-transparent appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
+ text-center w-10 text-lg outline-none"
           />
           <button
             className="text-xl font-bold"
