@@ -33,7 +33,7 @@
 
 ## ⚙️ Используемые технологии
 
-- ✅ **Next.js 14** (App Router)
+- ✅ **Next.js 15** (App Router)
 - ✅ **React** + TypeScript
 - ✅ **Zustand** (store корзины)
 - ✅ **Tailwind CSS**
